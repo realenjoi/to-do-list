@@ -14,7 +14,7 @@ Users can:
 
 ## 🚀 Live Demo
 
-Coming soon… (or add a GitHub Pages / Netlify / Vercel link here)
+Coming soon…
 
 ---
 
