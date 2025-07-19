@@ -21,11 +21,13 @@ function addTask() {
     const buttonGroup = document.createElement("div");
     buttonGroup.classList.add("button-group");
 
+    // Edit button
     const editBtn = document.createElement("button");
     editBtn.textContent = "Edit";
     editBtn.classList.add("edit-btn");
     editBtn.onclick = () => editTask(li, textSpan);
 
+    // ✓ Complete button
     const completeBtn = document.createElement("button");
     completeBtn.textContent = "✓";
     completeBtn.classList.add("complete-btn");
@@ -34,6 +36,7 @@ function addTask() {
         applyFilter();
     };
 
+    // ❌ Delete button
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "X";
     deleteBtn.classList.add("delete-btn");
@@ -63,6 +66,8 @@ function addTask() {
     input.value = "";
 
     applyFilter();
+    updateCompletedCount();
+    applyFilter(); // make sure it respects current filter
 }
 
 function editTask(li, textSpan) {

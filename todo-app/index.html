@@ -11,14 +11,18 @@
 <body>
     <div class="container">
         <h1>To-Do List</h1>
+        <!-- 🔼 Filter Buttons First -->
+        <div class="filters">
+            <button onclick="setFilter('all')" id="allBtn">All</button>
+            <button onclick="setFilter('active')" id="activeBtn">Active</button>
+            <button onclick="setFilter('completed')" id="completedBtn">Completed</button>
+        </div>
+
+
+        <!-- 🔽 Task Input Below -->
         <input id="taskInput" type="text" placeholder="Add a new task" />
         <button onclick="addTask()">Add Task</button>
 
-        <div class="filters">
-            <button onclick="setFilter('all')">All</button>
-            <button onclick="setFilter('active')">Active</button>
-            <button onclick="setFilter('completed')">Completed</button>
-        </div>
 
         <ul id="taskList"></ul>
     </div>

@@ -43,6 +43,7 @@ li button {
 
 .filters {
     margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     gap: 8px;
 }
